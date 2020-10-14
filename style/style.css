@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #3E3E8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #f5f6fa;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+main {
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+}
+
+#carrinhoCompras {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+    justify-content: flex-end;
+
+}
+
+#carrinhoCompras h4 {
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 400;
+    background-color: #3E3E8E;
+}
+
+form{
+    background-color: #3E3E8E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 680px;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 8px 8px 8px 2px #888888;
+}
+
+form section select {
+    width: 250px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px 2px #323250;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#btnComprar {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 12px 2px #323250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 168, 69);
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#btnComprar:hover {
+    color: #2d2d2d;
+    background-color: rgb(71, 209, 71);
+    font-size: medium;
+    font-weight: 600;
+}
+
+
+
+
+/* -------------  Page de Relatorio ----------- */
+
+
+main #relatorio {
+    background-color: #58588127;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 680px;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px 2px #888888;
+}
+
+main #relatorio #textoPadrao {
+    color: #2d2d2d;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+main #relatorio #textoRefeicao {
+    color: #f5f6fa;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgba(5, 5, 5, 0.288)
+}
+
+main #relatorio #textoResort {
+    color: #f5f6fa;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgba(5, 5, 5, 0.288)
+}
+
+main #relatorio #textoFamilia {
+    color: #f5f6fa;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgba(5, 5, 5, 0.288)
+}
+
+main #relatorio #textoGorjeta {
+    color: #f5f6fa;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgba(5, 5, 5, 0.288)
+}
+
+#btnPDF {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 12px 2px #323250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 54, 247);
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#btnPDF:hover {
+    color: #f5f6fa;
+    background-color: rgb(27, 23, 247);
+    font-size: medium;
+    font-weight: 600;
+}
