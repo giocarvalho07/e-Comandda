@@ -28,48 +28,128 @@
             </div>
         </div>
 
-        <form action="" method="post">
+        <section id="form" >
 
             <section id="refeicao" >
-                <select name="" id="">
-                    <option value=""> Café da manhã </option>
-                    <option value=""> Almoço </option>
-                    <option value=""> Jantar </option>
+                <h3>
+                    Selecione a sua Refeição
+                </h3>
+                <select name="select_refeicao" id="select_refeicao"> 
+                    <option value="ref_1"> Café da manhã </option>
+                    <option value="ref_2"> Almoço </option>
+                    <option value="ref_3"> Jantar </option>
                 </select>
             </section>
 
             <section id="resort" >
-                <select name="" id="">
-                    <option value=""> Chalé do Sul </option>
-                    <option value=""> Casa de Praia </option>
-                    <option value=""> Casa de Campo </option>
+                <h3>
+                    Selecione o seu Resort
+                </h3>
+                <select name="select_resort" id="select_resort">
+                    <option value="res_1"> Chalé do Sul </option>
+                    <option value="res_2"> Casa de Praia </option>
+                    <option value="res_3"> Casa de Campo </option>
                 </select>
             </section>
 
             <section id="familia" >
-                <select name="" id="">
-                    <option value=""> 0 a 2 pessoas </option>
-                    <option value=""> 2 a 5 pessoas </option>
-                    <option value=""> até 7 pessoas </option>
+                <h3>
+                    Selecione a quantidade de pessoas
+                </h3>
+                <select name="select_familia" id="select_familia">
+                    <option value="fam_1"> 0 a 2 pessoas </option>
+                    <option value="fam_2"> 2 a 5 pessoas </option>
+                    <option value="fam_3"> até 7 pessoas </option>
                 </select>
             </section>
 
             <section id="gorjeta" >
-                <select name="" id="">
-                    <option value=""> Não contribuirei com gorjeta </option>
-                    <option value=""> 5% de gorjeta </option>
-                    <option value=""> 10% de gorjeta </option>
-                    <option value=""> 15% de gorjeta </option>
+                <h3>
+                    Selecione a sua gorjeta
+                </h3>
+                <select name="select_gorjeta" id="select_gorjeta">
+                    <option value="n_gorj"> Não contribuirei com gorjeta </option>
+                    <option value="gorj_1"> 5% de gorjeta </option>
+                    <option value="gorj_2"> 10% de gorjeta </option>
+                    <option value="gorj_3"> 15% de gorjeta </option>
                 </select>
             </section>
 
-            <button id="btnComprar" onclick="">
-                Finalizar compra
+            <button id="btnComprar" onclick="comprar()">
+                Calcular 
             </button>
 
-        </form>
+        </section>
+
 
     </main>
+
+
+    <div id="modal" class="modal_container" >
+
+        <div class="modal_conteudo" >
+
+            <button class="modal_fechar" onclick="fecharModal()"> X </button>
+
+            <h2>
+                E-comanda 
+            </h2>
+
+            <div id="textoPadrao">
+                Relatório de compras 
+            </div>
+
+            <div id="textoPadrao">
+               Refeição 
+            </div>
+
+            <div id="textoRefeicao">  </div>
+
+            <div id="textoPadrao">
+                Resort 
+            </div>
+
+            <div id="textoResort">   </div>
+
+            <div id="textoPadrao">
+                Tamanho da família
+            </div>
+
+            <div id="textoFamilia">   </div>
+
+            <div id="textoPadrao">
+                Porcentagem Garçom
+            </div>
+
+            <div id="textoGorjeta">  </div>
+
+            <div id="textoPadrao">
+                Total da comanda
+            </div>
+
+            <div id="textoTotal">  </div>
+
+            <div>
+
+                <button id="btnPDF" onclick="" >
+                    Finalizar compra
+                </button>
+
+                <button id="btnPDF" onclick="" >
+                    Baixar PDF
+                </button>
+
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
 
 
 </body>
