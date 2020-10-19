@@ -31,7 +31,7 @@
         <section id="form" >
 
             <section id="refeicao" >
-                <h3>
+                <h3 class="titulo_select" >
                     Selecione a sua Refeição
                 </h3>
                 <select name="select_refeicao" id="select_refeicao"> 
@@ -42,7 +42,7 @@
             </section>
 
             <section id="resort" >
-                <h3>
+                <h3 class="titulo_select" >
                     Selecione o seu Resort
                 </h3>
                 <select name="select_resort" id="select_resort">
@@ -53,7 +53,7 @@
             </section>
 
             <section id="familia" >
-                <h3>
+                <h3 class="titulo_select" >
                     Selecione a quantidade de pessoas
                 </h3>
                 <select name="select_familia" id="select_familia">
@@ -64,7 +64,7 @@
             </section>
 
             <section id="gorjeta" >
-                <h3>
+                <h3 class="titulo_select" >
                     Selecione a sua gorjeta
                 </h3>
                 <select name="select_gorjeta" id="select_gorjeta">
@@ -87,59 +87,86 @@
 
     <div id="modal" class="modal_container" >
 
-        <div class="modal_conteudo" >
+        <div class="modal_conteudo" id="modal_conteudo" >
 
             <button class="modal_fechar" onclick="fecharModal()"> X </button>
 
-            <h2>
-                E-comanda 
+            <h2 class="titulo_modal">
+                E-comandda 
             </h2>
 
             <div id="textoPadrao">
                 Relatório de compras 
             </div>
 
-            <div id="textoPadrao">
-               Refeição 
+            <div class="texto_modal">
+                <div id="textoPadrao">
+                    Refeição 
+                 </div>
+     
+
+                 <div id="nomeRefeicao">
+                </div>
+
+
+                 <div id="textoRefeicao">
+                 </div>
             </div>
 
-            <div id="textoRefeicao">  </div>
 
-            <div id="textoPadrao">
-                Resort 
+            <div class="texto_modal">
+                <div id="textoPadrao">
+                    Resort 
+                </div>
+
+                <div id="nomeResort">
+                </div>
+
+                <div id="textoResort">
+                </div>
+            </div>  
+
+            <div class="texto_modal">
+                <div id="textoPadrao">
+                    Tamanho da família
+                </div>
+
+                <div id="nomeFamilia">
+                </div>
+
+                <div id="textoFamilia">
+                </div>
             </div>
 
-            <div id="textoResort">   </div>
 
-            <div id="textoPadrao">
-                Tamanho da família
+            <div class="texto_modal">
+                <div id="textoPadrao">
+                    Porcentagem Garçom
+                </div>
+
+                <div id="textoGorjeta">
+                </div>
+            </div>  
+
+
+            <div class="texto_modal">
+                <div id="textoPadrao">
+                    Total da comanda
+                </div>
+
+                <div id="textoTotal">
+                </div>
             </div>
 
-            <div id="textoFamilia">   </div>
-
-            <div id="textoPadrao">
-                Porcentagem Garçom
-            </div>
-
-            <div id="textoGorjeta">  </div>
-
-            <div id="textoPadrao">
-                Total da comanda
-            </div>
-
-            <div id="textoTotal">  </div>
-
-            <div>
-
-                <button id="btnPDF" onclick="" >
+          
+            <div class="botao_modal">
+                <button id="btnFinalizar" onclick="finalizarCompra()" >
                     Finalizar compra
                 </button>
 
-                <button id="btnPDF" onclick="" >
+                <button id="btnPDF" onclick="criaPDF()" >
                     Baixar PDF
                 </button>
-
-
             </div>
 
             

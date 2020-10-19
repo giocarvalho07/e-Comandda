@@ -40,9 +40,16 @@ main {
 
 #carrinhoCompras h4 {
     color: #f5f6fa;
-    font-size: medium;
+    font-size: x-large;
     font-weight: 400;
     background-color: #3E3E8E;
+}
+
+#resultadoCompra {
+    color: #2d2d2d;
+    font-size: xx-large;
+    font-weight: bolder;
+    
 }
 
 #form{
@@ -58,7 +65,7 @@ main {
 }
 
 #form section select {
-    width: 250px;
+    width: 350px;
     height: 40px;
     border-radius: 12px;
     box-shadow: 2px 2px 12px 2px #323250;
@@ -66,6 +73,14 @@ main {
     justify-content: center;
     font-size: medium;
     font-weight: 500;
+}
+
+.titulo_select { 
+    color: #f5f6fa;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+
 }
 
 #btnComprar {
@@ -91,55 +106,46 @@ main {
 }
 
 
-
-
-/* -------------  Page de Relatorio ----------- */
-
-
-main #relatorio {
-    background-color: #58588127;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    height: 680px;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 4px 4px 12px 2px #888888;
-}
-
-main #relatorio #textoPadrao {
+#textoPadrao {
     color: #2d2d2d;
-    font-size: x-large;
-    font-weight: 600;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
 }
 
-main #relatorio #textoRefeicao {
-    color: #f5f6fa;
-    font-size: x-large;
-    font-weight: 600;
-    background-color: rgba(5, 5, 5, 0.288)
+#textoRefeicao {
+    color: #2d2d2d;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
 }
 
-main #relatorio #textoResort {
-    color: #f5f6fa;
-    font-size: x-large;
-    font-weight: 600;
-    background-color: rgba(5, 5, 5, 0.288)
+#textoResort {
+    color: #2d2d2d;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
 }
 
-main #relatorio #textoFamilia {
-    color: #f5f6fa;
-    font-size: x-large;
-    font-weight: 600;
-    background-color: rgba(5, 5, 5, 0.288)
+#textoFamilia {
+    color: #2d2d2d;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
 }
 
-main #relatorio #textoGorjeta {
-    color: #f5f6fa;
-    font-size: x-large;
-    font-weight: 600;
-    background-color: rgba(5, 5, 5, 0.288)
+#textoGorjeta {
+    color: #2d2d2d;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
+}
+
+#textoTotal {
+    color: #2d2d2d;
+    font-size: large;
+    font-weight: 900;
+    margin: 10px; 
 }
 
 #btnPDF {
@@ -160,6 +166,28 @@ main #relatorio #textoGorjeta {
 #btnPDF:hover {
     color: #f5f6fa;
     background-color: rgb(27, 23, 247);
+    font-size: medium;
+    font-weight: 600;
+}
+
+#btnFinalizar {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 12px 2px #323250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 168, 69);
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#btnFinalizar:hover {
+    color: #2d2d2d;
+    background-color: rgb(71, 209, 71);
     font-size: medium;
     font-weight: 600;
 }
@@ -185,13 +213,50 @@ main #relatorio #textoGorjeta {
 }
 
 .modal_conteudo {
-    background-color: aqua;
+    background-color: #f5f6fa;
     width: 60%;
     min-width: 280px;
     padding: 40px;
     border: none;
     border-radius: 8px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.titulo_modal { 
+    color: #2d2d2d;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto_modal { 
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
+    background-color: rgb(224, 221, 221);
+}
+
+.botao_modal {
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
 }
 
 .modal_fechar {
@@ -202,7 +267,95 @@ main #relatorio #textoGorjeta {
     height: 50px;
     border-radius: 50%;
     border: black;
-    background-color: red;
+    background-color: rgb(211, 47, 47);
     color: white;
     cursor: pointer;
+    margin: 3px;
 }
+
+
+/* =========== compra finalizada =========== */
+
+.relatorio_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relatorio_conteudo {
+    background-color: #f5f6fa;
+    width: 60%;
+    min-width: 280px;
+    padding: 40px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.titulo_modal { 
+    color: #2d2d2d;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto_modal { 
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
+    background-color: rgb(224, 221, 221);
+}
+
+.botao_modal {
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
+}
+
+#btnVoltar {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 12px 2px #323250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 47, 47);
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#btnVoltar:hover {
+    color: #f5f6fa;
+    background-color: rgb(236, 51, 51);
+    font-size: medium;
+    font-weight: bolder;
+}
+
+
