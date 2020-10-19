@@ -131,8 +131,15 @@ function comprar() {
 
     document.getElementById('textoFamilia').innerHTML = ` Taxa de ${familiaPreco} %`
 
+
     // ============= gorjeta
-    document.getElementById('textoGorjeta').innerHTML = ` Taxa de contribuição de ${gorjetaPreco} %`
+    document.getElementById('nomeGorjeta').innerHTML = ` Taxa de contribuição ` 
+
+    document.getElementById('textoGorjeta').innerHTML = ` ${gorjetaPreco} %`
+
+    
+    // ============= total
+    document.getElementById('nomeTotal').innerHTML = ` --- ` 
 
     document.getElementById('textoTotal').innerHTML = ` R$
     ${resultadoCompras.toFixed(2)}`
