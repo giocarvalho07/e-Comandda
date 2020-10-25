@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+a{
+    text-decoration:  none;
+    color: #f5f6fa;
+    font-size: medium;
+    font-weight: 500;
+}
+
 header {
     width: 100vw;
     height: 80px;

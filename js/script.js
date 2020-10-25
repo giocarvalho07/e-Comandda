@@ -10,7 +10,7 @@ function fecharModal() {
 }
 
 function finalizarCompra() {
-    let finalizar = window.location.href = "../pages/relatorio.html"
+    let finalizar =  window.location.href = "../pages/relatorio.html"
 }
 
 function voltarPagina() {
