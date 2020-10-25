@@ -359,3 +359,40 @@ main {
 }
 
 
+
+@media screen and (max-width: 550px) {
+
+    #form {
+        width: 95%;
+    }
+
+    #form section select {
+        width: 85%;
+        margin: 20px;
+    }
+
+    #btnComprar {
+        width: 85%;
+        margin: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 380px) {
+
+    #form {
+        width: 95%;
+    }
+
+    #form section select {
+        width: 85%;
+        margin: 20px;
+    }
+
+    #btnComprar {
+        width: 85%;
+        margin: 20px;
+    }
+    
+}

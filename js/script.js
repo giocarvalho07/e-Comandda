@@ -139,7 +139,7 @@ function comprar() {
 
     
     // ============= total
-    document.getElementById('nomeTotal').innerHTML = ` --- ` 
+    document.getElementById('nomeGorjeta').innerHTML = ` --- ` 
 
     document.getElementById('textoTotal').innerHTML = ` R$
     ${resultadoCompras.toFixed(2)}`
@@ -149,7 +149,7 @@ function comprar() {
 
 function criaPDF() {
     let modal = document.getElementById('modal').innerHTML
-    let abrirPdf = window.open('', '', 'height=700,width=1200')
+    let abrirPdf = window.open('height=700,width=1200')
     abrirPdf.document.write('<title> Relatório de compras </title>')
     abrirPdf.document.write(modal) 
     abrirPdf.document.close()                                    
