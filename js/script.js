@@ -9,12 +9,14 @@ function fecharModal() {
     modal.classList.remove('mostrar')
 }
 
+let finalizar
 function finalizarCompra() {
-    let finalizar =  window.location.href = "../pages/relatorio.html"
+    finalizar =  window.location.href = "../pages/relatorio.html"
 }
 
+let voltar
 function voltarPagina() {
-    let voltar = window.location.href = "../index.html"
+    voltar = window.location.href = "../index.html"
 }
 
 

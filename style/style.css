@@ -369,6 +369,13 @@ main {
 
 @media screen and (max-width: 550px) {
 
+    a{
+        text-decoration:  none;
+        color: #f5f6fa;
+        font-size: medium;
+        font-weight: 500;
+    }
+
     #form {
         width: 95%;
     }
@@ -387,6 +394,13 @@ main {
 
 
 @media screen and (max-width: 380px) {
+
+    a{
+        text-decoration:  none;
+        color: #f5f6fa;
+        font-size: medium;
+        font-weight: 500;
+    }
 
     #form {
         width: 95%;
